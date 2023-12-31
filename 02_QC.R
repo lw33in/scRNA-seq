@@ -17,7 +17,6 @@ library(dplyr)
 
 # Set dir ----------------------------------------------------------------------
 count_dir <- "/proj/"
-setwd(home_dir)
 # dir.create("SN_data/", recursive = TRUE)
 # dir.create("SN_plots/", recursive = TRUE)
 data_dir <- "/proj/SN_data/"
@@ -25,6 +24,7 @@ plots_dir <- "/proj/SN_plots/"
 
 # Load data --------------------------------------------------------------------
 # Set sample info
+setwd(count_dir)
 sample_info <- data.frame(ctrl = "ctrl", exp = "exp")
 # Read in 10X data for a single sample (output is a sparse matrix)
 ctrl_counts <- Read10X(data.dir = "./sample-ctrl/outs/raw_feature_bc_matrix/")

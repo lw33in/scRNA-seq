@@ -44,6 +44,8 @@
   --aligner cellranger -r 2.3.0 --outdir output_cellranger --igenomes_ignore \
   --fasta refdata-gex-GRCh38-2020-A/fasta/genome.fa --gtf refdata-gex-GRCh38-2020-A/genes/genes.gtf
   ```
+    > Note If you are new to Nextflow and nf-core, please refer to [this page](https://nf-co.re/docs/usage/installation) on how to set-up Nextflow. Make sure to [test your setup](https://nf-co.re/docs/usage/introduction#how-to-run-a-pipeline) with -profile test before running the workflow on actual data.
+  
 - `02_QC.R` Perform QC on raw count data, filter out poor quality cells and unwanted variances, generate associated plots.
 - `03_integration.R` Normalize, transform, and integrate datasets across experimental batches or conditions.
 - `04_clustering.R` Perform PCA and unsupervised clustering to assign cells to clusters.

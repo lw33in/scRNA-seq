@@ -9,7 +9,7 @@
 
 
 # Load packages ----------------------------------------------------------------
-# install.packages("Seurat", "igraph", "tidyverse", "dplyr")
+# install.packages(c("Seurat", "igraph", "tidyverse", "dplyr"))
 library(Seurat)
 library(tidyverse)
 library(RCurl)
@@ -23,7 +23,6 @@ plots_dir <- "/proj/SN_plots/"
 # Load data --------------------------------------------------------------------
 setwd(data_dir)
 load("filtered_seurat_rmDoublet.RData")
-
 
 # Step 1: Normalization --------------------------------------------------------
 # LogNormalize

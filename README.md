@@ -54,7 +54,7 @@
 - `07_cluster_annotation.R` Summarize cell origins in different clusters / cell types.
 
 ## Tools 
-- R-4.3.2
+- R 2.3.0
 - nextflow 2.3.0
 - Seurat v5
   
